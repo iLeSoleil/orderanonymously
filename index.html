@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JS Button Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+   <div class="header">
+    <div class="logo"><svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="70%" y2="0%">
+                <stop offset="0%" style="stop-color:black;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:grey;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <text x="0" y="50" fill="url(#grad1)" font-family="Arial" font-size="45">
+            <tspan>O</tspan>
+            <tspan dx="-30" dy="10">A</tspan> <!-- Adjust dx to negative value for overlapping -->
+        </text>
+    </svg>
+    <span class="big-letter">O</span>rder<span class="big-letter">A</span>nonymously</div>
+<br></br>
+<div class="sub-header"> Jetzt Anonym bei großen Online-Händlern bestellen!  
+</div>
+<div class="sub-header2">verhindere, von den großen Tech-Firmen getrackt zu werden. 
+</div>
+    <ul class="features">
+      <div class="out"> <div class="in">1 📧</div><li>Einfach den Link Ihrer gewünschten Order zusammen mit der gewünschten Lieferadresse an private.reactive510@passmail.net senden.</li>  <br></br>
+      </div>  <div class="out">  <div class="in">2 📝</div><li>Sobald wir die gewünschte Order überprüft haben, erhalten Sie das Angebot welches Sie lediglich bestätigen müssen.</li> <br></br>
+      </div> <div class="out">  <div class="in">3 📦</div><li>Wir bestellen das gewünschte Produkt für Sie und Sie erhalten Ihre Bestellung ohne Ihre Angaben an den Online Händler übermitteln zu müssen.</li><br></br>
+      </div>
+    </ul>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="faq-section">
+            <h3>FAQ</h3>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">Welche Zahlungsmethoden werden akzeptiert?</p>
+                <p class="faq-answer" style="display: none;">Wir akzeptieren derzeitig lediglich PayPal.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">Wie viel kostet eine Bestellung über OrderAnonymously?</p>
+                <p class="faq-answer" style="display: none;">Für jede Bestellung wird eine Mindest Pauschale von 10 Euro erhoben, hierzu kommen noch Versandkosten. Bei Bestellungen ab 100 Euro beläuft sich die Pauschale auf 10 % vom Warenwert. Sie erhalten den genauen Preis im Angebot, nachdem Sie uns das gewünschte Produkt und die gewünschte Adresse via E-Mail übermittelt haben.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">Wer bestellt für mich?</p>
+                <p class="faq-answer" style="display: none;">Wir bestellen Ihre Waren über unsere Accounts, und senden Sie dann an die von Ihnen angegebene Adresse.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">Werden nur Hausadressen akzeptiert?</p>
+                <p class="faq-answer" style="display: none;">Jede gültige Adresse oder Postfach wird akzeptiert.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question" onclick="toggleAnswer(this)">Können Bestellungen retourniert oder storniert werden?</p>
+                <p class="faq-answer" style="display: none;">Bestellungen können in der Regel weder storniert noch retourniert werden. In Ausnahmefällen können Absprachen getroffen werden. Eine Aufwandsentschädigung wird hierbei jedoch erforderlich.</p>
+            </div>
+        </div>
+        <div class="disclaimer-section">
+            <p>Disclaimer: OrderAnonymously und assoziierte Personen übernehmen keinerlei Verantwortung für die von Ihnen bestellten Waren und was mit diesen nach dem Versand an Sie geschieht. Der Kunde übernimmt volle Verantwortung dafür, dass alle bestellten Güter zu legalen Zwecken verwendet werden. </p>
+            <p>Privacy: Your privacy is important to us. Please read our privacy policy to understand how we handle your information.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom, #f8f8f8 0%, #a9a9a9 50%, #707070 100%);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* Main header style */
+.header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+.logo {
+    font-family: 'Arial', sans-serif; /* You can choose a more sophisticated font if you prefer */
+    font-size: 2em; /* Adjust size as needed */
+    font-weight: bold; /* Makes the text bold */
+    color: #000000d3; /* A soft purple color */
+    text-transform: uppercase; /* Optional: makes all letters uppercase */
+    letter-spacing: 0.1em; /* Spacing between letters */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 10px 20px; /* Adds space around the text */
+    margin: 0 auto; /* Centers the logo if block level */
+    display: inline-block; /* Allows margin auto to work and gives the ability to set padding */
+    /* Below are optional properties to add if the logo is part of a navbar or header */
+
+}
+.big-letter {
+    font-family:Georgia, 'Times New Roman', Times, serif; /* You can choose a more sophisticated font if you prefer */
+font-size: 50px;
+    color: #000000;  /* A soft purple color */
+
+}
+.logo2 {
+    font-family:Georgia, 'Times New Roman', Times, serif; /* You can choose a more sophisticated font if you prefer */
+
+    color: #4f00ee;  /* A soft purple color */
+
+}
+/* If you want a hover effect when the mouse moves over the logo */
+.logo:hover {
+    cursor: pointer;
+    color: #000000e1; /* Lighter purple on hover for interaction feedback */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+}
+
+/* Media query for responsiveness, making the logo smaller on mobile devices */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.5em; /* Smaller size on mobile devices */
+        padding: 5px 10px; /* Less padding on smaller screens */
+    }
+}
+/* Big header text style */
+.big-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #9090909c;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Sub-header or description style */
+.sub-header {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 20px;
+    
+    font-style: italic;
+}
+
+/* Sub-header or description style */
+.sub-header2 {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+/* Features list style */
+.features {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #f8f8f8 0%, #a9a9a9 50%, #f8f8f8 100%);
+    padding: 20px;
+
+}
+
+.features li {
+    display: inline-block; /* Aligns items in a row */
+    margin: 0 10px;
+    font-weight: bold;
+    color: #151515c7;
+}
+
+.features li::before {
+    content: ""; /* Adds check mark before each feature */
+    color: #28a745; /* Bootstrap's .text-success color */
+    margin-right: 5px;
+}
+
+/* Make sure the content is properly spaced and aligned in a wider screen */
+@media (min-width: 768px) {
+    .header {
+        padding: 40px 0;
+    }
+
+    .big-text {
+        font-size: 4em;
+    }
+
+    .sub-header {
+        font-size: 1.75em;
+    }
+}
+
+.logo-container {
+    display: flex; /* Use flexbox to center the logo */
+    justify-content: center; /* Center logo horizontally */
+    align-items: center; /* Center logo vertically */
+    height: 100vh; /* Full height of the viewport */
+
+    /* Gradient background from white to a light gray */
+    background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
+}
+
+
+
+.out{
+ border: 1px solid rgba(255, 255, 255, 0.199);
+ padding-top: 15px;
+ margin: 40px;
+ border-radius: 5px;
+}
+.in{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.647);
+    font-size: 33px;
+font-style: italic;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Stack the FAQ and Disclaimer on top of each other */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h3, .disclaimer-section p {
+    margin: 10px 0;
+}
+
+.faq-item {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    font-weight: bold;
+    font-size: large;
+}
+.faq-question:hover {
+    cursor: pointer;
+}
+
+.faq-answer {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #f8f8f8 0%, #a9a9a912 50%, #f8f8f8 100%);
+padding: 30px;
+color: #000000ec;
+border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Place the FAQ and Disclaimer side by side on wider screens */
+        justify-content: space-around;
+    }
+
+    .faq-section, .disclaimer-section {
+        text-align: left;
+    }
+}
